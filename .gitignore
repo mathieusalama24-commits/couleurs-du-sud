@@ -1,0 +1,9 @@
+node_modules
+dist
+sheet
+matiere-source
+*.tsbuildinfo
+.DS_Store
+# notes internes de prospection : ne vont pas dans le dépôt public
+donnees-verifiees.md
+message-prospection.md
