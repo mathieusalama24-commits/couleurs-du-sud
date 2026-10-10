@@ -116,6 +116,24 @@ export function Header() {
             </span>
           </a>
 
+          <nav aria-label={t.ui.mainNav} className="hidden lg:block">
+            <ul className="flex items-center gap-5 xl:gap-8">
+              {NAV_IDS.map((id) => (
+                <li key={id}>
+                  <a
+                    href={`#${id}`}
+                    aria-current={active === id ? 'true' : undefined}
+                    className={`inline-flex min-h-11 items-center text-xs font-bold uppercase tracking-wider transition-colors duration-300 hover:text-terre ${
+                      active === id ? 'text-terre' : 'text-ink'
+                    }`}
+                  >
+                    {t.nav[id]}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
           <div className="flex items-center gap-2 md:gap-3">
             <LangSwitch className="hidden md:block" />
             <a
@@ -133,7 +151,7 @@ export function Header() {
               aria-label={open ? t.ui.closeMenu : t.ui.openMenu}
               onClick={() => setOpen((v) => !v)}
             >
-              <span className="hidden text-xs font-bold uppercase tracking-wider sm:inline">{t.ui.menu}</span>
+              <span className="hidden text-xs font-bold uppercase tracking-wider xl:inline">{t.ui.menu}</span>
               {open ? <X size={20} strokeWidth={1.5} /> : <Menu size={20} strokeWidth={1.5} />}
             </button>
           </div>
@@ -152,7 +170,7 @@ export function Header() {
         }`}
       >
         <div className="mx-auto grid min-h-full max-w-7xl gap-12 px-4 pb-16 pt-28 md:grid-cols-12 md:gap-8 md:px-8 md:pt-40">
-          <nav aria-label={t.ui.mainNav} className="md:col-span-7">
+          <nav aria-label={t.ui.mobileNav} className="md:col-span-7">
             <ul>
               {NAV_IDS.map((id, i) => (
                 <li key={id} className="border-b border-ink/15">

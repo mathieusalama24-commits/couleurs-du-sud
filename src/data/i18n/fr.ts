@@ -95,7 +95,7 @@ export const fr: Content = {
     openMenu: 'Ouvrir le menu',
     closeMenu: 'Fermer le menu',
     mainNav: 'Navigation principale',
-    mobileNav: 'Menu',
+    mobileNav: 'Menu complet',
     book: 'Réserver',
     call: 'Appeler',
     backToTop: 'retour en haut',

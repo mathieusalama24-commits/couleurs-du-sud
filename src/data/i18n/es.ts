@@ -15,7 +15,7 @@ export const es: Content = {
     openMenu: 'Abrir el menú',
     closeMenu: 'Cerrar el menú',
     mainNav: 'Navegación principal',
-    mobileNav: 'Menú',
+    mobileNav: 'Menú completo',
     book: 'Reservar',
     call: 'Llamar',
     backToTop: 'volver arriba',
