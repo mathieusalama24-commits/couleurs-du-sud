@@ -109,7 +109,7 @@ export function Header() {
         }`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 md:px-8">
-          <a href="#" className="leading-none" aria-label={`${HOTEL.name}, ${t.ui.backToTop}`}>
+          <a href="#" className="leading-none">
             <span className="block font-display text-xl tracking-tight">{HOTEL.name}</span>
             <span className="mt-1 block text-[0.7rem] font-bold uppercase tracking-widest text-ink-soft">
               {t.footer.kind} · {HOTEL.city}
